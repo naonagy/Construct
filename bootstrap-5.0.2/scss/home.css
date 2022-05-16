@@ -10891,7 +10891,7 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-#head1 {
+* {
   background-color: #182D42;
 }
 
@@ -10899,12 +10899,6 @@ textarea.form-control-lg {
   border-radius: 15px;
   width: 200px;
   height: 200px;
-}
-
-#titlumare {
-  padding-top: 60px;
-  height: 250px;
-  text-align: center;
 }
 
 h1, .h1 {
@@ -10922,11 +10916,52 @@ h2, .h2 {
 }
 
 #carouselExampleCaptions {
-  -webkit-clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%, 0 0%);
-          clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%, 0 0%);
+  background-color: teal;
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+          clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+}
+
+#blurimage {
+  position: absolute;
+  bottom: 72px;
+  left: 72px;
+  width: 300px;
+  height: 100px;
+}
+
+#blurredbackground {
+  position: absolute;
+  /*matches #content position*/
+  bottom: 72px;
+  left: 72px;
+  /*matches #content position*/
+  width: 300px;
+  /*matches #content width*/
+  height: 100px;
+  /*matches #content height*/
+  filter: blur(10px);
+  z-index: -1;
+}
+
+#titlumare {
+  font-size: 4rem;
+  color: white;
 }
 
 /*
+#carouselExampleCaptions{
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%, 0 0%);
+}
+#titlumare{
+    padding-top: 60px;
+    height: 250px;
+    text-align: center;
+}
+
 #logodiv{ grid-area: logo;
     display: grid;
     justify-content: flex-start;
