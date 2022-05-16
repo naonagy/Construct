@@ -1,0 +1,62 @@
+@import "bootstrap";
+#head1
+{
+    background-color: #182D42;
+}
+#logo
+{
+    border-radius: 15px;
+    width: 200px;
+    height: 200px;
+}
+#titlumare{
+    padding-top: 60px;
+    height: 250px;
+    text-align: center;
+}
+h1{
+    font-style: italic;
+}
+h2{
+    font-size: large;
+}
+#itel{
+    padding-top: 100px;
+    text-align: center;
+    font-size: small;
+}
+#carouselExampleCaptions{
+    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%, 0 0%);
+}
+
+/*
+#logodiv{ grid-area: logo;
+    display: grid;
+    justify-content: flex-start;
+    align-content: flex-start;
+}
+#ic{ grid-area: icontact;
+    display: flex;
+
+    justify-content: space-between;
+}
+#car1{ grid-area: carous1;
+    display: grid;
+    justify-content: center;
+}
+#titlumare{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+
+}
+.container{
+    display: grid;
+    grid-template-areas:
+        'logo logo titlu titlu icontact icontact'
+        'carous1 carous1 carous1 carous1 carous1 carous1'
+        'carous1 carous1 carous1 carous1 carous1 carous1';
+    width: 100%;
+
+}  
+*/
