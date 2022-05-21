@@ -10893,12 +10893,36 @@ textarea.form-control-lg {
 }
 * {
   background-color: #182D42;
+  color: white;
+}
+
+.carousel-inner .item {
+  height: 100vh;
+}
+
+.carousel-caption {
+  color: #000;
+  background-color: transparent;
+  padding-bottom: 500px;
+}
+
+.transp {
+  background-color: transparent;
+}
+
+.navbar {
+  padding: 0px;
+  font-size: 22px;
+}
+
+#navbarNavDropdown {
+  padding-right: 0;
 }
 
 #logo {
   border-radius: 15px;
-  width: 200px;
-  height: 200px;
+  width: 125px;
+  height: 125px;
 }
 
 h1, .h1 {
@@ -10907,12 +10931,6 @@ h1, .h1 {
 
 h2, .h2 {
   font-size: large;
-}
-
-#itel {
-  padding-top: 100px;
-  text-align: center;
-  font-size: small;
 }
 
 #carouselExampleCaptions {
@@ -10925,70 +10943,44 @@ h2, .h2 {
           clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
 }
 
-#blurimage {
-  position: absolute;
-  bottom: 72px;
-  left: 72px;
-  width: 300px;
-  height: 100px;
+#carouselExampleCaptions img {
+  /* Safari 6.0 - 9.0 */
+  filter: blur(2px);
 }
 
-#blurredbackground {
-  position: absolute;
-  /*matches #content position*/
-  bottom: 72px;
-  left: 72px;
-  /*matches #content position*/
-  width: 300px;
-  /*matches #content width*/
-  height: 100px;
-  /*matches #content height*/
-  filter: blur(10px);
-  z-index: -1;
+.accordion-button {
+  background-color: #4b729a;
 }
 
-#titlumare {
-  font-size: 4rem;
+.card {
   color: white;
+  border: transparent;
 }
 
-/*
-#carouselExampleCaptions{
-    clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%, 0 0%);
-}
-#titlumare{
-    padding-top: 60px;
-    height: 250px;
-    text-align: center;
+.accordion-item {
+  border-radius: 10px;
 }
 
-#logodiv{ grid-area: logo;
-    display: grid;
-    justify-content: flex-start;
-    align-content: flex-start;
+.accordion-header {
+  border-radius: 10px;
 }
-#ic{ grid-area: icontact;
-    display: flex;
 
-    justify-content: space-between;
+.bx-wrapper {
+  width: 90%;
+  height: 65%;
+  border-style: none;
 }
-#car1{ grid-area: carous1;
-    display: grid;
-    justify-content: center;
-}
-#titlumare{
-    color: #fff;
-    display: flex;
-    justify-content: center;
 
+#firstslider {
+  /* Safari 6.0 - 9.0 */
+  filter: blur(2px);
 }
-.container{
-    display: grid;
-    grid-template-areas:
-        'logo logo titlu titlu icontact icontact'
-        'carous1 carous1 carous1 carous1 carous1 carous1'
-        'carous1 carous1 carous1 carous1 carous1 carous1';
-    width: 100%;
 
-}  
-*//*# sourceMappingURL=home.css.map */
+.bxslider img {
+  width: 100%;
+  height: 600px;
+}
+
+title {
+  font-family: lobster;
+}/*# sourceMappingURL=home.css.map */

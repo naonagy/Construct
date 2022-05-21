@@ -4,95 +4,213 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://kit.fontawesome.com/58902b6e5e.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="bootstrap-5.0.2/scss/home.css">
-    <title>Document</title>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <script src="https://kit.fontawesome.com/58902b6e5e.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>   
+    <link rel="script" href="home.js">
+
+   
+
+    <title>Beni`s Construct</title>
+
 </head>
 <body>
+    <header id="head1" class="container-fluid">
+      <div class="d-flex flex-row justify-content-around align-items-center">
+        <div>
+          <img src="Logo1.png" alt="logo"  id="logo" class="col-sm">
+        </div>
 
-    <section id="head1" class="container-fluid">
-        <nav id="navbar" class="navbar sticky-top navbar-expand-lg navbar-light ">
-          <div class="container navbar">
-            <a class="navbar-brand  text-white" href="file:///C:/Front-end/Beni%60s%20Construct/home.html#">Beni`s Construct</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <div>
+          <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light rounded" aria-label="Twelfth navbar example">
+            <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar" aria-controls="collapsibleNavbar" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <div class="collapse navbar-collapse justify-content-md-center" id="collapsibleNavbar">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link active text-white" aria-current="page" href="file:///C:/Front-end/Beni%60s%20Construct/home.html#">Home</a>
+                  <a class="nav-link active text-white" aria-current="page" href="home.html" target="_self">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="file:///C:/Front-end/Beni%60s%20Construct/servicii.html">Servicii</a>
+                  <a class="nav-link active text-white" href="servicii.html" target="_blank">Servicii</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="file:///C:/Front-end/Beni%60s%20Construct/portofoliu.html">Portofoliu</a>
+                  <a class="nav-link text-white" href="portofoliu.html" target="_blank">Portofoliu</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="file:///C:/Front-end/Beni%60s%20Construct/desprenoi.html">Despre noi</a>
+                  <a class="nav-link text-white" href="desprenoi.html" target="_blank">Despre noi</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link text-white" href="file:///C:/Front-end/Beni%60s%20Construct/contact.html">Contact</a>
+                  <a class="nav-link text-white" href="contact.html" target="_blank">Contact</a>
                 </li>
-              <!--<li>
-                    <div id="itel" class="text-white col-4">
-                        <div><i class="bi bi-telephone"></i>
-                          0772903983</div>
-                        <div><i class="bi bi-envelope"></i>
-                          contact@bnconstruct.ro</div>
-                      </div>
-                </li>-->  
               </ul>
             </div>
           </div>
         </nav>
-        
-   <!--
-          <div class="row d-flex justify-content-center">
-            <div id="logodiv" class="col-6">
-              <img src="Logo.png" alt="logo"  id="logo" class="col-sm">
-            </div>
-            <div id="titlumare" class="col-5 text-white">
-              <h1>Beni`s Construction</h1>
-              <h2>Servicii de calitate garantată!</h2>
-            </div>
+        </div>
+        <div>  <div class=" text-center">
+          <div><i class="bi bi-telephone">0772903983</i>
           </div>
-         <div class="row">
-              <div class="col-6 col-sm-11 w-25 m-0 text-white d-flex flex-column justify-content-center" >
+          <div><i class="bi bi-envelope">contact@bnconstruct.ro</i> 
+          </div>
+        </div></div>
+      </div>
+    </section>
+      <script>
+        $(document).ready(function(){
+          $('.slider').bxSlider();
+        });
+        $('.bxslider').bxSlider({
+          auto: true,
+          autoControls: true,
+          stopAutoOnClick: true,
+          pager: true,
+          slideWidth: 600
+        });
+      </script>
+      <div class="container-fluid d-flex justify-content-center">
+
+      
+      <div class="slider bxslider">
+        <div><img src="slider.png" id="firstslider"></div>
+        <div><img src="slider1.jpg"></div>
+        <div><img src="slider2.jpg"></div>
+        <div><img src="slider3.jpg"></div>
+        <div><img src="slider4.jpg"></div>
+      </div>
+</div>
+
+
+
+      <div class="container-fluid">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="carousel5.jpg" class="d-block w-100" alt="poza cu o casa">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="transp">First slide label</h5>
+                <p class="transp">Some representative placeholder content for the first slide.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="carousel2.jpg" class="d-block w-100" alt="poza cu o casa">
+              <div class="carousel-caption d-none d-md-block">
                 <h5>First slide label</h5>
-                <p>Some representative placeholder content for the first slide.</p>
-              </div>-->
-
-              
-            <div class="row d-flex justify-content-center">
-
-            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-              <div class="carousel-indicators">
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <p class="transp">Some representative placeholder content for the first slide.</p>
               </div>
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img src="carousel5.jpg" class="d-block w-100" alt="poza cu o casa">
-                </div>
-                <div class="carousel-item">
-                  <img src="carousel2.jpg" class="d-block w-100" alt="poza cu o casa">
-                </div>
-                <div class="carousel-item">
-                  <img src="ccarousel3.jpg" class="d-block w-100" alt="poza cu o casa">
-                </div>
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
+            <div class="carousel-item">
+              <img src="carousel3.jpg" class="d-block w-100" alt="poza cu o casa">
+              <div class="carousel-caption d-none d-md-block">
+                <h5 class="transp">First slide label</h5>
+                <p class="transp">Some representative placeholder content for the first slide.</p>
+              </div>
             </div>
           </div>
-        </section>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        </div>
+      </div>
+    </header>
+    <section class="container-fluid">
+      <h1 class="col-2 text-center text-white">De ce noi?</h1>
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              Experienta
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              Calitate si durabilitate
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Preturi competitive
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+          </div>
+        </div>
+      </div>
+
+
+    <section class="container-fluid d-flex justify-content-around">
+      <div class="card-group w-75">
+        <div class="card">
+          <img src="services.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Servicii</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="portofolio.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Portofoliu</h5>
+            <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card">
+          <img src="aboutus.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Despre noi</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+   <!--<div>
+      <h1 style="font-family: lobster; font-style: normal;"><i class="fa-solid fa-helmet-safety"></i>Beni`s Construction</h1>
+    </div>
+  
+  
+   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Lobster&display=swap" rel="stylesheet">-->
+
 </body>
 </html>
