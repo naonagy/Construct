@@ -10891,6 +10891,29 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-h1, .h1 {
-  color: red;
+.navbar {
+  background-color: #182D42;
+  color: #faebd7;
+}
+
+.nav-item * {
+  color: #faebd7 !important;
+}
+
+body {
+  background-color: #b0bdca;
+}
+
+footer {
+  background-color: #637282;
+  margin-top: 0;
+}
+
+footer * {
+  background-color: #637282;
+}
+
+#copyright {
+  background-color: #182D42;
+  color: #faebd7;
 }/*# sourceMappingURL=servicii.css.map */

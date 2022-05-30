@@ -1,33 +1,23 @@
 @import "bootstrap";
-*
-{
+*{
     background-color: #182D42;
     color: white;
 }
-.carousel-inner .item{
-height: 100vh;
+body
+{
+    background-color: #182D42;
 }
-.carousel-caption{
-    color: #000;
-    background-color: transparent;
-    padding-bottom: 500px;
-}
-.transp{
-    background-color: transparent;
-}
-.navbar{
+.navbar
+{
     padding: 0px;
     font-size: 22px;
 }
-#navbarNavDropdown{
-    padding-right: 0;
-}
+
 #logo
 {
     border-radius: 15px;
     width: 125px;
     height: 125px;
-    //padding-left: 10px;
 }
 
 h1{
@@ -36,47 +26,149 @@ h1{
 h2{
     font-size: large;
 }
-#carouselExampleCaptions {
-    background-color: teal;
-    height: 80vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
-
+#secondbox{
+    h2{
+        background-color: #b0bdca;
+        color: #212529 !important;
     }
-#carouselExampleCaptions img{
-    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-  filter: blur(2px);
+    p{
+        background-color: #b0bdca;
+        color: #212529 !important;
+    }
+    background-color: #b0bdca;
 }
-.accordion-button{
-    background-color: #4b729a;
-  }  
+#thirdbox{
+    h2{
+        background-color: #b0bdca;
+        color: #212529 !important;
+    }
+    p{
+        background-color: #b0bdca;
+        color: #212529 !important;
+    }
+    background-color: #b0bdca;
+}
+footer{
+    background-color: #b0bdca;
+    margin-top: 0;
+}
+footer *{
+    background-color: #b0bdca;
+}
+#copyright{
+    background-color: #637282;
+}
+#statistici{
+    background-color: #b0bdca;
+    padding-bottom: 0;
+    margin-bottom: 0;
+    height: 250px;
+    overflow: hidden;
+}
+#statistici *{
+    background-color: #b0bdca;
+}
+#statistici div{
+    height: inherit;
+}
+#semicircle{
+    padding: 0em;
+    margin: 0;
+    //position: absolute;
+    //top: 50%;
+   left: 50%;
+   // transform: translate(-50%, -50%);
+    //height: 100px;
+    width: 200px;
+    border-radius: 0 150px 150px 0px;
+}
+#semicircle *{
+    background-color: #212529 !important;
+    overflow: hidden;
+    width: fit-content;
+    border-radius: inherit;
+}
+#semicircle h3{
+    text-align: center;
+}
+
+.slider{
+    margin-bottom: 0 !important;
+}
+.bx-wrapper{
+    left: 0;
+    box-shadow: none;
+    border: none;
+    background-color: transparent !important;
+    border: transparent !important;
+}
+.bx-pager{
+    padding: 0 !important;
+}
+
+.slider img{
+    max-height: 100vh;
+    width: 100%;
+}
+
+.slidertext{
+    position:absolute;
+    bottom:0px;
+    background-color: rgba(0,0,0,0.4);width:100%;text-align: center;
+
+}
 .card{
+    background-color: #182D42; 
     color: white;
     border: transparent;
 }
-.accordion-item{
-border-radius: 10px;
-}
-.accordion-header{
-    border-radius: 10px;
-    }
-.bx-wrapper{
-    width: 90%;
-    height: 65%;
-    border-style: none;
+.bi{
+    -webkit-text-size-adjust: auto;
 }
 
-#firstslider{
-    -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-  
-  filter: blur(2px);
+@media only screen and (min-width: 1024px) {
+    .card-img-top {
+    width: 300px;
+    height: 300px;
+    }
+   }
+@media only screen and (max-width: 992px) {
+#headbar{
+    display: flex !important;
+    flex-wrap: wrap-reverse;
 }
-.bxslider img{
-    width: 100%;
-    height: 600px;
 }
-title{
-    font-family: lobster;
+@media only screen and (max-width: 768px){
+    #thirdbox{
+    h2{
+        background-color: #212529 !important;
+        color: #fff !important;
+    }
+    p{
+        background-color: #212529;
+        color: #fff !important;
+    }
+    background-color: #212529;
+    border: 0px solid transparent !important;
+    button{
+        color: #f8f9fa;
+        border-color: #f8f9fa;
+    }
+}
+#fourthbox{
+    h2{
+        background-color: #b0bdca !important;
+        color: #212529 !important;
+    }
+    p{
+        background-color: #b0bdca !important;
+        color: #212529 !important;
+    }
+    background-color: #b0bdca !important;
+    border: 1px solid #dee2e6 !important;
+    button{
+        color: #6c757d;
+        border-color: #6c757d;
+    }
+}
 }

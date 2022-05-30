@@ -10896,27 +10896,13 @@ textarea.form-control-lg {
   color: white;
 }
 
-.carousel-inner .item {
-  height: 100vh;
-}
-
-.carousel-caption {
-  color: #000;
-  background-color: transparent;
-  padding-bottom: 500px;
-}
-
-.transp {
-  background-color: transparent;
+body {
+  background-color: #182D42;
 }
 
 .navbar {
   padding: 0px;
   font-size: 22px;
-}
-
-#navbarNavDropdown {
-  padding-right: 0;
 }
 
 #logo {
@@ -10933,54 +10919,163 @@ h2, .h2 {
   font-size: large;
 }
 
-#carouselExampleCaptions {
-  background-color: teal;
-  height: 80vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
-          clip-path: polygon(0 0, 100% 0, 100% 70%, 50% 100%, 0 70%);
+#secondbox {
+  background-color: #b0bdca;
+}
+#secondbox h2, #secondbox .h2 {
+  background-color: #b0bdca;
+  color: #212529 !important;
+}
+#secondbox p {
+  background-color: #b0bdca;
+  color: #212529 !important;
 }
 
-#carouselExampleCaptions img {
-  /* Safari 6.0 - 9.0 */
-  filter: blur(2px);
+#thirdbox {
+  background-color: #b0bdca;
+}
+#thirdbox h2, #thirdbox .h2 {
+  background-color: #b0bdca;
+  color: #212529 !important;
+}
+#thirdbox p {
+  background-color: #b0bdca;
+  color: #212529 !important;
 }
 
-.accordion-button {
-  background-color: #4b729a;
+footer {
+  background-color: #b0bdca;
+  margin-top: 0;
+}
+
+footer * {
+  background-color: #b0bdca;
+}
+
+#copyright {
+  background-color: #637282;
+}
+
+#statistici {
+  background-color: #b0bdca;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  height: 250px;
+  overflow: hidden;
+}
+
+#statistici * {
+  background-color: #b0bdca;
+}
+
+#statistici div {
+  height: inherit;
+}
+
+#semicircle {
+  padding: 0em;
+  margin: 0;
+  left: 50%;
+  width: 200px;
+  border-radius: 0 150px 150px 0px;
+}
+
+#semicircle * {
+  background-color: #212529 !important;
+  overflow: hidden;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: inherit;
+}
+
+#semicircle h3, #semicircle .h3 {
+  text-align: center;
+}
+
+.slider {
+  margin-bottom: 0 !important;
+}
+
+.bx-wrapper {
+  left: 0;
+  box-shadow: none;
+  border: none;
+  background-color: transparent !important;
+  border: transparent !important;
+}
+
+.bx-pager {
+  padding: 0 !important;
+}
+
+.slider img {
+  max-height: 100vh;
+  width: 100%;
+}
+
+.slidertext {
+  position: absolute;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.4);
+  width: 100%;
+  text-align: center;
 }
 
 .card {
+  background-color: #182D42;
   color: white;
   border: transparent;
 }
 
-.accordion-item {
-  border-radius: 10px;
+.bi {
+  -webkit-text-size-adjust: auto;
 }
 
-.accordion-header {
-  border-radius: 10px;
+@media only screen and (min-width: 1024px) {
+  .card-img-top {
+    width: 300px;
+    height: 300px;
+  }
 }
-
-.bx-wrapper {
-  width: 90%;
-  height: 65%;
-  border-style: none;
+@media only screen and (max-width: 992px) {
+  #headbar {
+    display: flex !important;
+    flex-wrap: wrap-reverse;
+  }
 }
+@media only screen and (max-width: 768px) {
+  #thirdbox {
+    background-color: #212529;
+    border: 0px solid transparent !important;
+  }
+  #thirdbox h2, #thirdbox .h2 {
+    background-color: #212529 !important;
+    color: #fff !important;
+  }
+  #thirdbox p {
+    background-color: #212529;
+    color: #fff !important;
+  }
+  #thirdbox button {
+    color: #f8f9fa;
+    border-color: #f8f9fa;
+  }
 
-#firstslider {
-  /* Safari 6.0 - 9.0 */
-  filter: blur(2px);
-}
-
-.bxslider img {
-  width: 100%;
-  height: 600px;
-}
-
-title {
-  font-family: lobster;
+  #fourthbox {
+    background-color: #b0bdca !important;
+    border: 1px solid #dee2e6 !important;
+  }
+  #fourthbox h2, #fourthbox .h2 {
+    background-color: #b0bdca !important;
+    color: #212529 !important;
+  }
+  #fourthbox p {
+    background-color: #b0bdca !important;
+    color: #212529 !important;
+  }
+  #fourthbox button {
+    color: #6c757d;
+    border-color: #6c757d;
+  }
 }/*# sourceMappingURL=home.css.map */
