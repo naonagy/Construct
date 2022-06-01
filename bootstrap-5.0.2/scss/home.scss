@@ -20,13 +20,16 @@ body
     height: 125px;
 }
 
-h1{
+h1
+{
     font-style: italic;
 }
-h2{
+h2
+{
     font-size: large;
 }
-#secondbox{
+#secondbox
+{
     h2{
         background-color: #b0bdca;
         color: #212529 !important;
@@ -37,7 +40,8 @@ h2{
     }
     background-color: #b0bdca;
 }
-#thirdbox{
+#thirdbox
+{
     h2{
         background-color: #b0bdca;
         color: #212529 !important;
@@ -48,30 +52,37 @@ h2{
     }
     background-color: #b0bdca;
 }
-footer{
+footer
+{
     background-color: #b0bdca;
     margin-top: 0;
 }
-footer *{
+footer *
+{
     background-color: #b0bdca;
 }
-#copyright{
+#copyright
+{
     background-color: #637282;
 }
-#statistici{
+#statistici
+{
     background-color: #b0bdca;
     padding-bottom: 0;
     margin-bottom: 0;
     height: 250px;
     overflow: hidden;
 }
-#statistici *{
+#statistici *
+{
     background-color: #b0bdca;
 }
-#statistici div{
+#statistici div
+{
     height: inherit;
 }
-#semicircle{
+#semicircle
+{
     padding: 0em;
     margin: 0;
     //position: absolute;
@@ -82,36 +93,43 @@ footer *{
     width: 200px;
     border-radius: 0 150px 150px 0px;
 }
-#semicircle *{
+#semicircle *
+{
     background-color: #212529 !important;
     overflow: hidden;
     width: fit-content;
     border-radius: inherit;
 }
-#semicircle h3{
+#semicircle h3
+{
     text-align: center;
 }
 
-.slider{
+.slider
+{
     margin-bottom: 0 !important;
 }
-.bx-wrapper{
+.bx-wrapper
+{
     left: 0;
     box-shadow: none;
     border: none;
     background-color: transparent !important;
     border: transparent !important;
 }
-.bx-pager{
+.bx-pager
+{
     padding: 0 !important;
 }
 
-.slider img{
+.slider img
+{
     max-height: 100vh;
     width: 100%;
 }
 
-.slidertext{
+.slidertext
+{
     position:absolute;
     bottom:0px;
     background-color: rgba(0,0,0,0.4);width:100%;text-align: center;
@@ -125,50 +143,92 @@ footer *{
 .bi{
     -webkit-text-size-adjust: auto;
 }
+.offcanvas .nav-item
+{
+    text-align: center;
+}
+.nb:hover{
+    box-shadow: none !important;
+}
 
-@media only screen and (min-width: 1024px) {
-    .card-img-top {
-    width: 300px;
-    height: 300px;
+@media only screen and (min-width: 1024px) 
+{
+    .card-img-top 
+    {
+        width: 300px;
+        height: 300px;
     }
    }
-@media only screen and (max-width: 992px) {
-#headbar{
-    display: flex !important;
-    flex-wrap: wrap-reverse;
-}
-}
-@media only screen and (max-width: 768px){
-    #thirdbox{
-    h2{
-        background-color: #212529 !important;
-        color: #fff !important;
+@media only screen and (max-width: 992px) 
+{
+    #headbar
+    {
+        display: flex !important;
+        flex-direction: column !important;
     }
-    p{
+    .bi
+    {
+        visibility: hidden;
+        display: none !important;
+    }
+}
+@media only screen and (min-width: 768px)
+{
+    .offnav{
+        visibility: hidden !important;
+        display: none !important;
+    }
+}
+@media only screen and (max-width: 768px)
+{
+    .bi
+    {
+        visibility: hidden !important;
+        display: none !important;
+    }
+    #headbar
+    {
+        flex-direction: row !important;
+        justify-content: space-evenly !important;
+    }
+    #thirdbox
+    {
         background-color: #212529;
-        color: #fff !important;
+        border: 0px solid transparent !important;
+        h2
+        {
+            background-color: #212529 !important;
+            color: #fff !important;
+        }
+        p{
+            background-color: #212529;
+            color: #fff !important;
+        }
+        button{
+            color: #f8f9fa;
+            border-color: #f8f9fa;
+        }
     }
-    background-color: #212529;
-    border: 0px solid transparent !important;
-    button{
-        color: #f8f9fa;
-        border-color: #f8f9fa;
-    }
-}
-#fourthbox{
-    h2{
+    #fourthbox
+    {   
         background-color: #b0bdca !important;
-        color: #212529 !important;
+        border: 1px solid #dee2e6 !important;
+
+        h2
+        {
+            background-color: #b0bdca !important;
+            color: #212529 !important;
+        }
+        p
+        {
+            background-color: #b0bdca !important;
+            color: #212529 !important;
+        }
+        
+        button
+        {
+            color: #6c757d;
+            border-color: #6c757d;
+        }
     }
-    p{
-        background-color: #b0bdca !important;
-        color: #212529 !important;
-    }
-    background-color: #b0bdca !important;
-    border: 1px solid #dee2e6 !important;
-    button{
-        color: #6c757d;
-        border-color: #6c757d;
-    }
-}
 }

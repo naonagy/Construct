@@ -10891,6 +10891,86 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-h1, .h1 {
-  color: purple;
+header {
+  background-color: #182D42;
+  color: #fff !important;
+}
+
+.navbar {
+  background-color: #182D42 !important;
+  padding: 0px;
+  font-size: 22px;
+}
+
+.bi {
+  -webkit-text-size-adjust: auto;
+}
+
+.offcanvas .nav-item {
+  text-align: center;
+}
+
+.offcanvas {
+  background-color: #b0bdca;
+}
+
+.offcanvas-header {
+  color: #182D42;
+}
+
+.nb:hover {
+  box-shadow: none !important;
+}
+
+body {
+  background-color: #b0bdca;
+}
+
+#logo {
+  border-radius: 15px;
+  width: 125px;
+  height: 125px;
+}
+
+footer {
+  background-color: #637282;
+  margin-top: 0;
+}
+
+footer * {
+  background-color: #637282;
+}
+
+#copyright {
+  background-color: #182D42;
+  color: #faebd7;
+}
+
+@media only screen and (max-width: 992px) {
+  #headbar {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+
+  .bi {
+    visibility: hidden;
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .offnav {
+    visibility: hidden !important;
+    display: none !important;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .bi {
+    visibility: hidden !important;
+    display: none !important;
+  }
+
+  #headbar {
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+  }
 }/*# sourceMappingURL=desprenoi.css.map */

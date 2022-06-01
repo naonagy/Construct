@@ -11032,6 +11032,14 @@ footer * {
   -webkit-text-size-adjust: auto;
 }
 
+.offcanvas .nav-item {
+  text-align: center;
+}
+
+.nb:hover {
+  box-shadow: none !important;
+}
+
 @media only screen and (min-width: 1024px) {
   .card-img-top {
     width: 300px;
@@ -11041,10 +11049,31 @@ footer * {
 @media only screen and (max-width: 992px) {
   #headbar {
     display: flex !important;
-    flex-wrap: wrap-reverse;
+    flex-direction: column !important;
+  }
+
+  .bi {
+    visibility: hidden;
+    display: none !important;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .offnav {
+    visibility: hidden !important;
+    display: none !important;
   }
 }
 @media only screen and (max-width: 768px) {
+  .bi {
+    visibility: hidden !important;
+    display: none !important;
+  }
+
+  #headbar {
+    flex-direction: row !important;
+    justify-content: space-evenly !important;
+  }
+
   #thirdbox {
     background-color: #212529;
     border: 0px solid transparent !important;
