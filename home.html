@@ -141,9 +141,13 @@
         </div>
       </div>
 
-      <div class="container py-4 jumbotron"> 
+      <p>
+        <button onclick="myMove()">Click Me</button> 
+        </p>
+
+      <div class="container position-relative py-4 jumbotron"> 
         <div class="row align-items-md-stretch">
-          <div class="col-md-6 dbox" id="firstbox">
+          <div class="col-md-6 dbox position-relative" id="firstbox">
             <div class="h-100 p-5 text-white bg-dark rounded-3">
               <h2 class="bg-dark">Personal calificat si specializat</h2>
               <p class="bg-dark">De proiectul de constructie se va ocupa o intreaga echipa a firmei respective, care este formata din personal calificat si specializat pentru fiecare tip de lucrare in parte.</p>
@@ -175,6 +179,26 @@
           </div>
         </div>
       </div>
+
+      <script>
+        var id = null;
+        function myMove() {
+          var elem = document.getElementById("firstbox");   
+          var pos = -350;
+          clearInterval(id);
+          id = setInterval(frame, 10);
+          function frame() {
+            if (pos == 0) {
+              clearInterval(id);
+            } else {
+              pos++; 
+              elem.style.top = pos; 
+              elem.style.left = pos + 'px'; 
+            }
+          }
+        }
+      </script> 
+
 
       <div class="container-fluid w-100 mt-5 pb-4 mb-5" id="statistici">
         <div class="row" id="rw">

@@ -10932,6 +10932,10 @@ body {
   height: 125px;
 }
 
+form {
+  border-radius: 10px;
+}
+
 footer {
   background-color: #637282;
   margin-top: 0;
