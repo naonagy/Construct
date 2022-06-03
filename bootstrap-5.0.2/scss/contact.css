@@ -10926,6 +10926,10 @@ body * {
 }
 
 body {
+  background-color: #182D42;
+}
+
+hr {
   background-color: #b0bdca;
 }
 
