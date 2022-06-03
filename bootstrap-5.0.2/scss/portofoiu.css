@@ -10891,6 +10891,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  background-color: #b0bdca;
+}
+
 header {
   background-color: #182D42;
   color: #fff !important;
@@ -10922,10 +10926,6 @@ header {
   box-shadow: none !important;
 }
 
-body {
-  background-color: #b0bdca;
-}
-
 #logo {
   border-radius: 15px;
   width: 125px;
@@ -10944,6 +10944,19 @@ footer * {
 #copyright {
   background-color: #182D42;
   color: #faebd7;
+}
+
+.bck {
+  background-color: #b0bdca;
+}
+
+.bck * {
+  background-color: #b0bdca;
+}
+
+hr {
+  color: black !important;
+  background-color: transparent;
 }
 
 @media only screen and (max-width: 992px) {

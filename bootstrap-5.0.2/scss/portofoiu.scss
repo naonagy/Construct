@@ -1,4 +1,8 @@
 @import "bootstrap";
+body
+{
+    background-color: #b0bdca;
+}
 header{
     background-color: #182D42;    
     color: #fff !important; 
@@ -26,10 +30,6 @@ header{
 .nb:hover{
     box-shadow: none !important;
 }
-body
-{
-    background-color: #b0bdca;
-}
 
 #logo
 {
@@ -53,6 +53,16 @@ footer *
     color: #faebd7;
 }
 
+.bck{
+    background-color: #b0bdca;
+}
+.bck *{
+    background-color: #b0bdca;
+}
+hr{
+    color: black !important;
+    background-color: transparent;
+}
 
 @media only screen and (max-width: 992px) 
 {

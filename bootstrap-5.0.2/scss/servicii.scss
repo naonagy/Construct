@@ -1,4 +1,9 @@
 @import "bootstrap";
+body
+{
+    background-color: #b0bdca;
+}
+
 header{
     background-color: #182D42;    
     color: #fff !important; 
@@ -26,10 +31,6 @@ header{
 .nb:hover{
     box-shadow: none !important;
 }
-body
-{
-    background-color: #b0bdca;
-}
 
 #logo
 {
@@ -40,7 +41,12 @@ body
 form{
     border-radius: 10px;
 }
-
+.bck{
+    background-color: #b0bdca;
+}
+.bck *{
+    background-color: #b0bdca;
+}
 footer
 {
     background-color: #637282;
@@ -50,15 +56,20 @@ footer *
 {
     background-color: #637282;
 }
-footer .nav-item{
-    color: #000;
-}
 #copyright
 {
     background-color: #182D42;
     color: #faebd7;
 }
+#static{
+    background-image: url(/Photos/instalatii.jpg) !important;
 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
 
 @media only screen and (max-width: 992px) 
 {
