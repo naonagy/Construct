@@ -10957,6 +10957,16 @@ footer * {
 hr {
   color: black !important;
   background-color: transparent;
+  text-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.35);
+}
+
+.img-fluid {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.2s;
+}
+
+.img-fluid:hover {
+  box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.35);
 }
 
 @media only screen and (max-width: 992px) {

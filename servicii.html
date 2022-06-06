@@ -9,7 +9,6 @@
     <script src="https://kit.fontawesome.com/58902b6e5e.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-    <script src="servicii.js"></script>
     <link rel="stylesheet" href="bootstrap-5.0.2/scss/servicii.css">
 </head>
 <body>
@@ -111,11 +110,11 @@
   <hr class="featurette-divider">
   
 <div class="row featurette">
-  <div class="col-md-7">
+  <div class="col-md-7 d-flex flex-column justify-content-center align-items-start">
     <h2 class="featurette-heading fw-normal lh-1">Montaj instalatii</h2>
     <p class="lead">Intelegem si respectam nevoia clientului de a avea nu doar o casa ci o locuinta, iar o locuinta presupune existenta instalatiilor de curent, apa si canalizare pentru o exploatare adecvata. Suntem cei mai in masura sa asiguram montajul acestora, cu atat mai mult in cazul proiectelor proprii de constructii.</p>
   </div>
-  <div class="col-md-5">
+  <div class="col-md-5 d-lg-flex justify-content-end">
     <img class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="400" height="400" src="Photos/instalatii.jpg" alt="">
   </div>
 </div>
@@ -123,7 +122,7 @@
 <hr class="featurette-divider">
 
 <div class="row featurette">
-  <div class="col-md-7 order-md-2">
+  <div class="col-md-7 order-md-2 d-flex flex-column justify-content-center align-items-start">
     <h2 class="featurette-heading fw-normal lh-1">Amenanjari interioare</h2>
     <p class="lead">Executam o gama variata de finisaje interioare care iti vor transforma casa intr-un spatiu ideal de locuit. Colaboram cu designeri interiori geniali care vin cu solutii la orice problema de amenajare a spatiului interior si pe care echipa noastra le pune in aplicare - tencuieli, zugraveli, termoizolatii, decoratiuni, gresie, faianta, parchet, mocheta, marmura s.a.</p>
   </div>
@@ -135,11 +134,11 @@
 <hr class="featurette-divider">
 
 <div class="row featurette">
-  <div class="col-md-7">
+  <div class="col-md-7 d-flex flex-column justify-content-center align-items-start">
     <h2 class="featurette-heading fw-normal lh-1">Amenanjari exterioare</h2>
     <p class="lead">Executam tencuieli, termoizolatii, hidroizolatii, amenajari gradini, foisoare, canalizare, retea de apa curenta, pavaje, fose septice, paratrasnet si multe alte lucrari de amenajare exterioara necesare unei locuinte moderne. Firma noastra de constructie este preocupata atat de siguranta si confortul locuintei, cat si de aspectul estetic al acesteia.</p>
   </div>
-  <div class="col-md-5">
+  <div class="col-md-5 d-lg-flex justify-content-end">
     <img class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="400" height="400" src="Photos/exterior.jpg" alt="">
   </div>
 </div>
@@ -147,7 +146,7 @@
 <hr class="featurette-divider">
 
 <div class="row featurette">
-  <div class="col-md-7 order-md-2">
+  <div class="col-md-7 order-md-2 d-flex flex-column justify-content-center align-items-start">
     <h2 class="featurette-heading fw-normal lh-1">Tamplarie PVC</h2>
     <p class="lead">Executam si montam usi si ferestre din PVC cu geam termopan, plase insecte, glafuri ferestre, rulouri exterioare. Va punem la dispozitie ferestre si usi durabile, de inalta calitate intr-o varietate de forme si dimensiuni, la cele mai bune preturi.</p>
   </div>
@@ -160,28 +159,75 @@
 
 </div>
 
-<div class="p mb-4 rounded-3">
-  <div class="container-fluid py-5">
+<div class="rounded-3">
+  <div class="container-fluid pt-5">
       <div>
-        <h2 class="display-6 text-center pb-5 ">Solicită o evaluare</h2>
+        <h2 class="display-6 text-center">Solicită o evaluare</h2>
       </div>
     </div>
   </div>
-  
-<div class="container-fluid d-flex justify-content-center">
-<form class="row g-3 col-6 border-dark border-1 border pb-4 mb-5">
-  <div class="col-12">
-    <label for="inputName2" class="form-label">Nume</label>
-    <input type="text" class="form-control" id="inputName2" placeholder="Nume">
+
+
+<div class="container-fluid ctn">
+  <div class="all-steps" id="all-steps"> <span class="step"></span> <span class="step"></span> <span class="step"></span> <span class="step"></span> </div>
+  <div class="row d-flex justify-content-center align-items-center">
+      <div class="col-md-6">
+          <form id="regForm">
+              <div class="tab">
+                  <p><input placeholder="Nume" oninput="this.className = ''" name="nume"></p>
+                  <p><input placeholder="Email" oninput="this.className = ''" name="email"></p>
+                  <p><input placeholder="Telefon" oninput="this.className = ''" name="telefon"></p>
+              </div>
+              <div class="tab">
+                  <p><input placeholder="Adresa" oninput="this.className = ''" name="adresa"></p>
+                  <p><input placeholder="Oras" oninput="this.className = ''" name="oras"></p>
+                  <p><input placeholder="Judet" oninput="this.className = ''" name="judet"></p>
+              </div>
+              <div class="tab">
+                  <h3>Solicit evaluarea pe data de:</h3>
+                  <p>Exp Month
+                      <select id="month">
+  <option value="1">January</option>
+  <option value="2">February</option>
+  <option value="3">March</option>
+  <option value="4">April</option>
+  <option value="5">May</option>
+  <option value="6">June</option>
+  <option value="7">July</option>
+  <option value="8">August</option>
+  <option value="9">September</option>
+  <option value="10">October</option>
+  <option value="11">November</option>
+  <option value="12">December</option>
+</select></p>
+                  <p>Exp Year
+                      <select id="year">
+  <option value="2021">2021</option>
+  <option value="2022">2022</option>
+  <option value="2023">2023</option>
+  <option value="2024">2024</option>
+</select></p>
+
+<input id="txtdate" type="text" 
+class="form-control">
+
+
+
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>
+              </div>
+
+              <div class="thanks-message text-center" id="text-message"> <img src="https://i.imgur.com/O18mJ1K.png" width="100" class="mb-4">
+                  <h3>Thanks for your Donation!</h3> <span>Your donation has been entered! We will contact you shortly!</span>
+              </div>
+              <div style="overflow:auto;" id="nextprevious">
+                  <div style="float:right;"> <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button> <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button> </div>
+              </div>
+          </form>
+      </div>
   </div>
-  <div class="col-md-12">
-    <label for="inputEmail4" class="form-label">Email</label>
-    <input type="email" class="form-control" id="inputEmail4" placeholder="Adresa de email">
-  </div>
-  <div class="col-12 d-flex justify-content-center">
-    <button type="button" class="btn btn-primary">Pasul următor</button>
-  </div>
-</form>
 </div>
 
 
@@ -241,6 +287,7 @@
           © 2021 Copyright
         </div>
   </footer>
-
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/servicii.js"></script>
 </body>
 </html>
