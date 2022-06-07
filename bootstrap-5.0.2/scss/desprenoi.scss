@@ -36,6 +36,9 @@ body
 .bck *{
     background-color: #b0bdca;
 }
+.bckg{
+    background-color: #182D42;
+}
 #logo
 {
     border-radius: 15px;
@@ -57,8 +60,16 @@ footer *
     background-color: #182D42;
     color: #faebd7;
 }
-
-
+#statistici
+{
+    color: #faebd7;
+    background-color: #001830;
+}
+#statistici *
+{
+    color: #faebd7;
+    background-color: #001830;
+}
 @media only screen and (max-width: 992px) 
 {
     #headbar
@@ -92,3 +103,31 @@ footer *
         justify-content: space-evenly !important;
     }
 }
+
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #001830;
+  }
+  
+  .separator::before,
+  .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+  }
+  
+  .separator:not(:empty)::before {
+    margin-right: .25em;
+  }
+  
+  .separator:not(:empty)::after {
+    margin-left: .25em;
+  }
+  .switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+  }
