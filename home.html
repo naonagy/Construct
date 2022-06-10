@@ -122,7 +122,7 @@
 
       <div class="p mb-4 bg-light rounded-3">
         <div class="container-fluid py-5">
-          <h1 class="display-5 fw-bold text-center pb-2">Beni`s Construction</h1>
+          <h1 class="display-5 fw-bold text-center pb-2" onmousemove="myMove(), myMove2(), myMove3(), myMove4()">Beni`s Construction</h1>
           <h2 class="display-6 text-center pb-5 ">Cine suntem?</h2>
           <div class="container-fluid col-10 align-content-center">
             <p class="py-5 my-5">Salut! Suntem o firma de constructii din judetul Maramures. Colaboram permanent cu partenerii si clientii nostri pentru a executa lucrarile propuse la standarde profesionale (case la rosu sau la cheie, reparatii de orice natura si finisaje interioare si exterioare, izolatii, instalatii termice, electrice si sanitare, lucrari de terasamente si drumuri, constructii hoteluri si pensiuni in Delta Dunarii). Raportul calitate - pret este pentru firma noastra obiectivul cel mai important.</p>
@@ -134,9 +134,7 @@
         </div>
       </div>
 
-      <p>
-        <button onclick="myMove()">Click Me</button> 
-        </p>
+
 
       <div class="container position-relative py-4 jumbotron"> 
         <div class="row align-items-md-stretch">
@@ -148,7 +146,7 @@
             </div>
           </div>
           <div class="col-md-6 lbox">
-            <div class="h-100 p-5 border rounded-3"id="secondbox">
+            <div class="h-100 p-5 border rounded-3 position-relative"id="secondbox">
               <h2>Pret raport calitate</h2>
               <p>Produsele oferite de noi sunt atent selectionate pentru a oferi o constructie de calitate si de durata. Verificam cu atentie fiecare produs pentru a respecta toate standardele de calitate. Prin partenerii nostri va punem la  dispozitie cele mai bune oferte de pret in raport calitate.</p>
               <button class="btn btn-outline-secondary" type="button">Citește mai mult</button>
@@ -157,14 +155,14 @@
         </div>
         <div class="row align-items-md-stretch">
           <div class="col-md-6 lbox">
-            <div class="h-100 p-5 border rounded-3" id="thirdbox">
+            <div class="h-100 p-5 border rounded-3 position-relative" id="thirdbox">
               <h2>Firma cu experienta</h2>
               <p>De la inceputul activitatii noastre am demarat numeroase proiecte, atat civile cat si industriale care ne-au recomandat mai departe, mentinandu-ne astfel in top.</p>
               <button class="btn btn-outline-secondary " type="button">Citește mai mult</button>
             </div>
           </div>
           <div class="col-md-6 dbox">
-            <div class="h-100 p-5 text-white bg-dark rounded-3" id="fourthbox">
+            <div class="h-100 p-5 text-white bg-dark rounded-3 position-relative" id="fourthbox">
               <h2 class="bg-dark">Garantia lucrarii</h2>
               <p class="bg-dark">De asemenea, asiguram garantie pentru orice produs sau serviciu oferit de noi, mentenanta si asistenta garantata de Filip Company Group, pentru siguranta constructiilor dumneavoastra.</p>
               <button class="btn btn-outline-light" type="button">Citește mai mult</button>
@@ -172,26 +170,6 @@
           </div>
         </div>
       </div>
-
-      <script>
-        var id = null;
-        function myMove() {
-          var elem = document.getElementById("firstbox");   
-          var pos = -350;
-          clearInterval(id);
-          id = setInterval(frame, 10);
-          function frame() {
-            if (pos == 0) {
-              clearInterval(id);
-            } else {
-              pos++; 
-              elem.style.top = pos; 
-              elem.style.left = pos + 'px'; 
-            }
-          }
-        }
-      </script> 
-
 
       <div class="container-fluid w-100 mt-5 pb-4 mb-5" id="statistici">
         <div class="row" id="rw">
