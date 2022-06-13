@@ -1,88 +1,62 @@
-function myFunction() {
-    document.getElementById("firstimg").style.msTransform = "rotate(360deg)"; // IE9 
-    document.getElementById("firstimg").style.transform = "rotate(360deg)";
 
-}
-var id = null;
-function myMove() {
-  var elem = document.getElementById("firstimg");   
-  clearInterval(id);
-  id = setInterval(frame, 10);
-  function frame() {
-    elem.style.transform = "rotate(360deg)";
-  }
-}
+    function validation(event)
+    {
+    var name = document.getElementById("name").value;
+    var tel = document.getElementById("phone").value;
+    var email = document.getElementById("mail").value;
+    var error = document.getElementById("errormsg");
+    var textarea= document.getElementById("ment").value;
+    
+    var message;
+    error.style.paddingBottom="25px";
 
-var currentTab = 0;
-document.addEventListener("DOMContentLoaded", function(event) {
-
-
-    showTab(currentTab);
-
-});
-
-function showTab(n) {
-    var x = document.getElementsByClassName("tab");
-    x[n].style.display = "block";
-    if (n == 0) {
-        document.getElementById("prevBtn").style.display = "none";
-    } else {
-        document.getElementById("prevBtn").style.display = "inline";
+    if(textarea.length < 100)
+    {
+        message= "Introduceti minimum 150 de  caractere!";
+        error.innerHTML=message;
+        document.getElementById("ment").style.backgroundColor = "#e9d0e2";
+        event.preventDefault();
     }
-    if (n == (x.length - 1)) {
-        document.getElementById("nextBtn").innerHTML = "Submit";
-    } else {
-        document.getElementById("nextBtn").innerHTML = "Next";
+    if(!(document.getElementById('star1').checked || document.getElementById('star2').checked || document.getElementById('star1').checked || document.getElementById('star3').checked ||document.getElementById('star4').checked||document.getElementById('star5').checked))
+    {  
+        message= "Adaugati rating-ul!";
+        error.innerHTML=message;
+        event.preventDefault();
     }
-    fixStepIndicator(n)
-}
-
-function nextPrev(n) {
-    var x = document.getElementsByClassName("tab");
-    if (n == 1 && !validateForm()) return false;
-    x[currentTab].style.display = "none";
-    currentTab = currentTab + n;
-    if (currentTab >= x.length) {
-        // document.getElementById("regForm").submit();
-        // return false;
-        //alert("sdf");
-        document.getElementById("nextprevious").style.display = "none";
-        document.getElementById("all-steps").style.display = "none";
-        document.getElementById("register").style.display = "none";
-        document.getElementById("text-message").style.display = "block";
-
-
-
-
+    if(email.length<5 || email.search("@") == -1)
+    {
+        message= "Introduceti o adresa de email valida!";
+        document.getElementById("mail").style.backgroundColor = "#e9d0e2";
+        error.innerHTML=message;
+        event.preventDefault();
+    }   
+    if(isNaN(tel) || tel.length<10 ||tel.length>13)
+    {
+        message= "Introduceti un numar de telefon valid!";
+        error.innerHTML=message;
+        document.getElementById("phone").style.backgroundColor = "#e9d0e2";
+        event.preventDefault();
     }
-    showTab(currentTab);
-}
-
-function validateForm() {
-    var x, y, i, valid = true;
-    x = document.getElementsByClassName("tab");
-    y = x[currentTab].getElementsByTagName("input");
-    for (i = 0; i < y.length; i++) {
-        if (y[i].value == "") {
-            y[i].className += " invalid";
-            valid = false;
-        }
+    if(name.length < 6)
+    {
+        message= "Introduceti un nume complet!";
+        error.innerHTML=message;
+        document.getElementById("name").style.backgroundColor = "#e9d0e2";
+        event.preventDefault();
     }
-    if (valid) { document.getElementsByClassName("step")[currentTab].className += " finish"; }
-    return valid;
-}
+    return true;
+    }
 
-function fixStepIndicator(n) {
-    var i, x = document.getElementsByClassName("step");
-    for (i = 0; i < x.length; i++) { x[i].className = x[i].className.replace(" active", ""); }
-    x[n].className += " active";
-}
-$(document).ready(function () {
-    $("#txtdate").datepicker({
-        showOn: "button",
-
-        // Button image stored on local device
-        buttonImage: "./icons8-calendar-48.png",    
-        buttonImageOnly: true
-    });
-});
+// Function that executes on click of first next button.
+function next_step1() {
+    document.getElementById("first").style.display = "none";
+    document.getElementById("second").style.display = "block";
+    document.getElementById("active2").style.color = "red";
+    }
+    // Function that executes on click of first previous button.
+    function prev_step1() {
+    document.getElementById("first").style.display = "block";
+    document.getElementById("second").style.display = "none";
+    document.getElementById("active1").style.color = "red";
+    document.getElementById("active2").style.color = "gray";
+    }

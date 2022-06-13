@@ -5,9 +5,6 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Servicii</title>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-      <script src="https://kit.fontawesome.com/58902b6e5e.js" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
       <link rel="stylesheet" href="bootstrap-5.0.2/scss/servicii.css">
    </head>
@@ -144,77 +141,54 @@
             <img class="bd-placeholder-img bd-placeholder-img-lg img-fluid mx-auto" width="400" height="400" src="Photos/fereste.jpg" alt="">
          </div>
       </div>
-      <hr class="featurette-divider">
    </div>
-   <div class="rounded-3">
+
+   <div class="rounded-3 py-5 my-3">
       <div class="container-fluid pt-5">
          <div>
-            <h2 class="display-6 text-center">Solicită o evaluare</h2>
+            <h2 class="display-6 text-center separator fw-bold">Scrie un review</h2>
          </div>
       </div>
    </div>
-   <div class="container-fluid ctn">
-      <div class="all-steps" id="all-steps"> <span class="step"></span> <span class="step"></span> <span class="step"></span> <span class="step"></span> </div>
+   <div class="container-fluid ctn pb-5">
+      <div class="all-steps" id="all-steps"> <span class="step"></span> <span class="step"></span> </div>
       <div class="row d-flex justify-content-center align-items-center">
          <div class="col-md-6">
-            <form id="regForm">
-               <div class="tab">
-                  <p><input placeholder="Nume" oninput="this.className = ''" name="nume"></p>
-                  <p><input placeholder="Email" oninput="this.className = ''" name="email"></p>
-                  <p><input placeholder="Telefon" oninput="this.className = ''" name="telefon"></p>
-               </div>
-               <div class="tab">
-                  <p><input placeholder="Adresa" oninput="this.className = ''" name="adresa"></p>
-                  <p><input placeholder="Oras" oninput="this.className = ''" name="oras"></p>
-                  <p><input placeholder="Judet" oninput="this.className = ''" name="judet"></p>
-               </div>
-               <div class="tab">
-                  <h3>Solicit evaluarea pe data de:</h3>
-                  <p>
-                     Exp Month
-                     <select id="month">
-                        <option value="1">January</option>
-                        <option value="2">February</option>
-                        <option value="3">March</option>
-                        <option value="4">April</option>
-                        <option value="5">May</option>
-                        <option value="6">June</option>
-                        <option value="7">July</option>
-                        <option value="8">August</option>
-                        <option value="9">September</option>
-                        <option value="10">October</option>
-                        <option value="11">November</option>
-                        <option value="12">December</option>
-                     </select>
-                  </p>
-                  <p>
-                     Exp Year
-                     <select id="year">
-                        <option value="2021">2021</option>
-                        <option value="2022">2022</option>
-                        <option value="2023">2023</option>
-                        <option value="2024">2024</option>
-                     </select>
-                  </p>
-                  <input id="txtdate" type="text" 
-                     class="form-control">
-                  <label class="switch">
-                  <input type="checkbox">
-                  <span class="slider round"></span>
-                  </label>
-               </div>
-               <div class="thanks-message text-center" id="text-message">
-                  <img src="https://i.imgur.com/O18mJ1K.png" width="100" class="mb-4">
-                  <h3>Thanks for your Donation!</h3>
-                  <span>Your donation has been entered! We will contact you shortly!</span>
-               </div>
-               <div style="overflow:auto;" id="nextprevious">
-                  <div style="float:right;"> <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button> <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button> </div>
-               </div>
-            </form>
+            <div id="errormsg" class="text-center text-danger fs-4"></div>
+               <form class="regform" method="post" id="regForm">
+                  <!-- Fieldsets -->
+                  <fieldset id="first">
+                     <input type="text" class="form-control" aria-label="Name" placeholder="Nume" id="name">
+                     <input type="text" class="form-control" aria-label="Phone Number" placeholder="Telefon" id="phone">
+                     <input type="text" class="form-control" placeholder="Email" id="mail">
+                  <button class="fbtn pt-2" id="next_btn1" onclick="next_step1()" type="button">Next</button>
+                  </fieldset>
+                  <fieldset id="second">
+                     <h3 class="text-white-50"><label for="rate" class="form-label">Spune-ne experienta ta!</label></h3>
+                     <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                      </div>
+                      <textarea class="form-control pb-2 mb-2" id="ment" rows="3"></textarea>
+                  <button class="pbtn" id="pre_btn1" onclick="prev_step1()" type="button">Previous</button>
+                  <button class="fbtn" id="submit_btn" name="next" onclick="validation(event)" type="submit">Submit</button>
+                  </fieldset>
+               </form>
+            </div>
          </div>
       </div>
    </div>
+
+
+
    <footer class="border-top pt-5">
       <div class="container">
          <div class="row">
@@ -282,8 +256,13 @@
          © 2022 Copyright
       </div>
    </footer>
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
    <script src="js/servicii.js"></script>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/58902b6e5e.js" crossorigin="anonymous"></script>
+   <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+
+
    </body>
 </html>
