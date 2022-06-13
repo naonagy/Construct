@@ -23,7 +23,6 @@ $(document).ready(function(){
         elem.style.left = pos + 'px'; 
       }
     }
-    
   }
   var id2 = null;
   function myMove2() {

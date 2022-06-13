@@ -11189,4 +11189,7 @@ input:checked + .slider:before {
     flex-direction: row !important;
     justify-content: space-evenly !important;
   }
+}
+.rotateimg {
+  transform: rotate(360deg);
 }/*# sourceMappingURL=servicii.css.map */

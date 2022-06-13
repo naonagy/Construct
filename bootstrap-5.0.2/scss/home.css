@@ -10960,7 +10960,6 @@ footer * {
   background-color: #b0bdca;
   padding-bottom: 0;
   margin-bottom: 0;
-  height: 250px;
   overflow: hidden;
 }
 
@@ -10978,6 +10977,7 @@ footer * {
   left: 50%;
   width: 200px;
   border-radius: 0 150px 150px 0px;
+  height: inherit;
 }
 
 #semicircle * {
@@ -11055,6 +11055,15 @@ footer * {
   .bi {
     visibility: hidden;
     display: none !important;
+  }
+
+  #semicircle {
+    border-radius: 0 0px 150px 150px !important;
+    min-width: 300px;
+    min-height: 150px;
+  }
+  #semicircle h3, #semicircle .h3 {
+    overflow: visible;
   }
 }
 @media only screen and (min-width: 768px) {

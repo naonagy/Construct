@@ -70,7 +70,7 @@ footer *
     background-color: #b0bdca;
     padding-bottom: 0;
     margin-bottom: 0;
-    height: 250px;
+    //height: 250px;
     overflow: hidden;
 }
 #statistici *
@@ -91,7 +91,7 @@ footer *
    // transform: translate(-50%, -50%);
     //height: 100px;
     width: 200px;
-    border-radius: 0 150px 150px 0px;
+    border-radius: 0 150px 150px 0px;    height: inherit;
 }
 #semicircle *
 {
@@ -151,6 +151,7 @@ footer *
     box-shadow: none !important;
 }
 
+
 @media only screen and (min-width: 1024px) 
 {
     .card-img-top 
@@ -170,6 +171,15 @@ footer *
     {
         visibility: hidden;
         display: none !important;
+    }
+    #semicircle
+    {
+        border-radius: 0 0px 150px 150px !important;  
+        min-width: 300px;
+        min-height: 150px;
+        h3{
+            overflow: visible;
+        }
     }
 }
 @media only screen and (min-width: 768px)
@@ -231,4 +241,5 @@ footer *
             border-color: #6c757d;
         }
     }
+    
 }

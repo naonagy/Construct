@@ -1,4 +1,18 @@
-//your javascript goes here
+function myFunction() {
+    document.getElementById("firstimg").style.msTransform = "rotate(360deg)"; // IE9 
+    document.getElementById("firstimg").style.transform = "rotate(360deg)";
+
+}
+var id = null;
+function myMove() {
+  var elem = document.getElementById("firstimg");   
+  clearInterval(id);
+  id = setInterval(frame, 10);
+  function frame() {
+    elem.style.transform = "rotate(360deg)";
+  }
+}
+
 var currentTab = 0;
 document.addEventListener("DOMContentLoaded", function(event) {
 
