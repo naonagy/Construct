@@ -11063,4 +11063,8 @@ input:checked + .slider:before {
 
 .slider.round:before {
   border-radius: 50%;
+}
+
+.p-l {
+  padding-left: 3rem !important;
 }/*# sourceMappingURL=contact.css.map */
