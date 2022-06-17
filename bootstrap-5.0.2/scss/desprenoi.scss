@@ -1,4 +1,5 @@
 @import "bootstrap";
+//Menu bar
 header{
     background-color: #182D42;    
     color: #fff !important; 
@@ -9,6 +10,7 @@ header{
     padding: 0px;
     font-size: 22px;
 }
+//contact
 .bi{
     -webkit-text-size-adjust: auto;
 }
@@ -30,6 +32,7 @@ body
 {
     background-color: #b0bdca;
 }
+//backgorund-color
 .bck{
     background-color: #b0bdca;
 }
@@ -45,7 +48,40 @@ body
     width: 125px;
     height: 125px;
 }
+//linia de separator la titluri
+.separator 
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #001830;
+}
 
+.separator::before,
+.separator::after 
+{
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+
+.separator:not(:empty)::before 
+{
+    margin-right: .25em;
+}
+
+.separator:not(:empty)::after 
+{
+    margin-left: .25em;
+}
+.switch 
+{
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+//footer
 footer
 {
     background-color: #637282;
@@ -70,6 +106,7 @@ footer *
     color: #faebd7;
     background-color: #001830;
 }
+//responsiveness pentru header
 @media only screen and (max-width: 992px) 
 {
     #headbar
@@ -104,30 +141,3 @@ footer *
     }
 }
 
-.separator {
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #001830;
-  }
-  
-  .separator::before,
-  .separator::after {
-    content: '';
-    flex: 1;
-    border-bottom: 1px solid #000;
-  }
-  
-  .separator:not(:empty)::before {
-    margin-right: .25em;
-  }
-  
-  .separator:not(:empty)::after {
-    margin-left: .25em;
-  }
-  .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-  }

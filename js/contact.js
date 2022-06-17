@@ -1,3 +1,5 @@
+//functia care valideaza formularul
+
 function validate()
 {
 var name = document.getElementById("name").value;
@@ -6,7 +8,7 @@ var email = document.getElementById("mail").value;
 var checkb = document.getElementById("flexSwitchCheckDefault");
 var error = document.getElementById("errormsg");
 
-
+//mesajul de eroare
 var message;
 error.style.paddingBottom="25px"
 

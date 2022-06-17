@@ -1,3 +1,5 @@
+//functiile care executa counterul
+
 let counts=setInterval(updated, value= 70, pace= 1000, auto= true);
 let upto=0;
 function updated()
