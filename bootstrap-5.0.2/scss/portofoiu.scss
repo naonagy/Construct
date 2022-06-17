@@ -3,6 +3,7 @@ body
 {
     background-color: #b0bdca;
 }
+//Menu bar
 header{
     background-color: #182D42;    
     color: #fff !important; 
@@ -13,6 +14,7 @@ header{
     padding: 0px;
     font-size: 22px;
 }
+//contact
 .bi{
     -webkit-text-size-adjust: auto;
 }
@@ -40,6 +42,7 @@ h1{
     height: 125px;
 }
 
+//footer
 footer
 {
     background-color: #637282;
@@ -54,19 +57,21 @@ footer *
     background-color: #182D42;
     color: #faebd7;
 }
-
+//background color
 .bck{
     background-color: #b0bdca;
 }
 .bck *{
     background-color: #b0bdca;
 }
+//hr pentru headinguri
 hr{
     color: black !important;
     background-color: transparent;
     text-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.35);
 }
 
+//umbra pentru imagini
 .img-fluid {
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.15);
   transition: box-shadow 0.2s;
@@ -75,6 +80,8 @@ hr{
 .img-fluid:hover{
   box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.35);
 }
+
+//responsiveness pentru header
 
 @media only screen and (max-width: 992px) 
 {

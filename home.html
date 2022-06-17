@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en ro">
    <head>
       <meta charset="UTF-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,18 +11,21 @@
       <link rel="stylesheet" href="bootstrap-5.0.2/scss/home.css">
    </head>
    <body>
+      <!--Meniul-->
       <header id="head1" class="container-fluid">
+         <!--Logo -->
          <div class="d-flex flex-row justify-content-around align-items-center mb-2" id="headbar">
             <div>
                <a class="navbar-brand" href="#">
-               <img src="Photos/Logo1.png" alt="logo"  id="logo" class="col-sm">
+                  <img src="Photos/Logo1.png" alt="logo"  id="logo" class="col-sm">
                </a>
             </div>
+            <!--Navbar -->
             <div>
                <nav class="navbar navbar-expand-md navbar-dark bg-light rounded" aria-label="Twelfth navbar example">
                   <div class="container-fluid">
                      <button class="navbar-toggler" id="offbut" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                     <span class="navbar-toggler-icon"></span>
+                        <span class="navbar-toggler-icon"></span>
                      </button>
                      <div class="collapse navbar-collapse justify-content-lg-center" id="collapsibleNavbar">
                         <ul class="navbar-nav">
@@ -46,6 +49,7 @@
                   </div>
                </nav>
             </div>
+            <!--Date de contact -->
             <div id="cont">
                <div class="text-center">
                   <div>
@@ -57,6 +61,7 @@
                </div>
             </div>
          </div>
+         <!--Bx-Slider -->
          <div class="slider">
             <div class="slider-img">
                <img src="Photos/slider.jpg" id="firstslider">
@@ -79,6 +84,7 @@
                <img src="Photos/slider4.jpg">
             </div>
          </div>
+         <!--Offcanvas navbar - display none till max 768px  -->
          <nav class="navbar bg-light" id="offnav">
             <div class="container-fluid">
                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
@@ -105,44 +111,50 @@
                         </li>
                         <li class="nav-item">
                            <div class=" navbar-text text-center">
-                              <div><i class="bi bi-telephone fs-5">0772903983</i>
+                              <div>
+                                 <i class="bi bi-telephone fs-5">0772903983</i>
                               </div>
-                              <div><i class="bi bi-envelope fs-5">contact@bnconstruct.ro</i> 
+                              <div>
+                                 <i class="bi bi-envelope fs-5">contact@bnconstruct.ro</i> 
                               </div>
                            </div>
+                        </li>
                      </ul>
                   </div>
                </div>
             </div>
          </nav>
       </header>
+      <!--Continut -->
       <section>
+         <!--Introducere -->
          <div class="p mb-4 bg-light rounded-3">
             <div class="container-fluid py-5">
                <h1 class="display-5 fw-bold text-center pb-2" onmousemove="myMove(), myMove2(), myMove3(), myMove4()">Beni`s Construction</h1>
                <h2 class="display-6 text-center pb-5 ">Cine suntem?</h2>
                <div class="container-fluid col-10 align-content-center">
-                  <p class="py-5 my-5">Salut! Suntem o firma de constructii din judetul Maramures. Colaboram permanent cu partenerii si clientii nostri pentru a executa lucrarile propuse la standarde profesionale (case la rosu sau la cheie, reparatii de orice natura si finisaje interioare si exterioare, izolatii, instalatii termice, electrice si sanitare, lucrari de terasamente si drumuri, constructii hoteluri si pensiuni in Delta Dunarii). Raportul calitate - pret este pentru firma noastra obiectivul cel mai important.</p>
+                  <p class="py-5 my-5">Salut! Suntem o firmă de construcții din judetul Maramureș. Colaborăm permanent cu partenerii și clienții noștri pentru a executa lucrările propuse la standarde profesionale (reparații de orice natură și finisaje interioare și exterioare, izolații, instalații termice, electrice și sanitare, lucrări de terasamente și drumuri, construcții hoteluri și pensiuni în Delta Dunării). Raportul calitate - preț este pentru firma noastră obiectivul cel mai important.</p>
                </div>
                <hr class="mt-5">
                <div>
-                  <h2 class="display-6 text-center pb-5 ">De ce noi??</h2>
+                  <h3 class="display-6 text-center pb-5 ">De ce noi??</h3>
                </div>
             </div>
          </div>
+         <!--Elemente cu animatie js -->
          <div class="container position-relative py-4 jumbotron">
             <div class="row align-items-md-stretch">
                <div class="col-md-6 dbox position-relative" id="firstbox">
                   <div class="h-100 p-5 text-white bg-dark rounded-3">
-                     <h2 class="bg-dark">Personal calificat si specializat</h2>
-                     <p class="bg-dark">De proiectul de constructie se va ocupa o intreaga echipa a firmei respective, care este formata din personal calificat si specializat pentru fiecare tip de lucrare in parte.</p>
+                     <h2 class="bg-dark">Personal calificat și specializat</h2>
+                     <p class="bg-dark">De proiectul de construcție se va ocupa o întreagă echipă a firmei respective, care este formată din personal calificat și specializat pentru fiecare tip de lucrare în parte.</p>
                      <button class="btn btn-outline-light" onclick="parent.location='desprenoi.html'" type="button">Citește mai mult</button>
                   </div>
                </div>
                <div class="col-md-6 lbox">
                   <div class="h-100 p-5 border rounded-3 position-relative"id="secondbox">
-                     <h2>Pret raport calitate</h2>
-                     <p>Produsele oferite de noi sunt atent selectionate pentru a oferi o constructie de calitate si de durata. Verificam cu atentie fiecare produs pentru a respecta toate standardele de calitate. Prin partenerii nostri va punem la  dispozitie cele mai bune oferte de pret in raport calitate.</p>
+                     <h2>Preț raport calitate</h2>
+                     <p>Produsele oferite de noi sunt atent selecționate pentru a oferi o construcție de calitate și de durată. Verificăm cu atenție fiecare produs pentru a respecta toate standardele de calitate. Prin partenerii noștri vă punem la  dispoziție cele mai bune oferte de preț în raport calitate.</p>
                      <button class="btn btn-outline-secondary" onclick="parent.location='desprenoi.html'" type="button">Citește mai mult</button>
                   </div>
                </div>
@@ -150,20 +162,21 @@
             <div class="row align-items-md-stretch">
                <div class="col-md-6 lbox">
                   <div class="h-100 p-5 border rounded-3 position-relative" id="thirdbox">
-                     <h2>Firma cu experienta</h2>
-                     <p>De la inceputul activitatii noastre am demarat numeroase proiecte, atat civile cat si industriale care ne-au recomandat mai departe, mentinandu-ne astfel in top.</p>
+                     <h2>Firmă cu experiență</h2>
+                     <p>De la începutul activității noastre am demarat numeroase proiecte, atât civile cât ți industriale care ne-au recomandat mai departe, menținându-ne astfel în top.</p>
                      <button class="btn btn-outline-secondary " onclick="parent.location='desprenoi.html'" type="button">Citește mai mult</button>
                   </div>
                </div>
                <div class="col-md-6 dbox">
                   <div class="h-100 p-5 text-white bg-dark rounded-3 position-relative" id="fourthbox">
-                     <h2 class="bg-dark">Garantia lucrarii</h2>
-                     <p class="bg-dark">De asemenea, asiguram garantie pentru orice produs sau serviciu oferit de noi, mentenanta si asistenta garantata de Filip Company Group, pentru siguranta constructiilor dumneavoastra.</p>
+                     <h2 class="bg-dark">Garanția lucrării</h2>
+                     <p class="bg-dark">De asemenea, asigurăm garanție pentru orice produs sau serviciu oferit de noi, mentenanță și asistență garantată, pentru siguranța construcțiilor dumneavoastră.</p>
                      <button class="btn btn-outline-light"  onclick="parent.location='desprenoi.html'" type="button">Citește mai mult</button>
                   </div>
                </div>
             </div>
          </div>
+         <!--Statistici -->
          <div class="container-fluid mt-5 mb-5" id="statistici">
             <div class="row d-sm-flex justify-content-center justify-content-lg-start" id="rw">
                <div class="col-sm-12 col-lg-3 bg-dark py-3 d-flex align-items-center justify-content-center" id="semicircle">
@@ -172,21 +185,22 @@
                <div class="col-sm-12 col-lg-3  text-center py-5 px-2">
                   <h2 class="pt-3 fs-4">3</h2>
                   <hr style="color: black; ">
-                  <p class="pb-3">Echipe de muncitori calificati</p>
+                  <p class="pb-3">Echipe de muncitori calificați</p>
                </div>
                <div class="col-sm-12 col-lg-3 text-center py-5 px-2">
                   <h2 class="pt-3 fs-4">42</h2>
                   <hr>
-                  <p class="pb-3">Case construite sau in constructie</p>
+                  <p class="pb-3">Case construite sau în construcție</p>
                </div>
                <div class="col-sm-12 col-lg-3 text-center py-5 px-2">
                   <h2 class="pt-3 fs-4">87</h2>
                   <hr>
-                  <p class="pb-3">Contracte de constructie semnate</p>
+                  <p class="pb-3">Contracte de construcție semnate</p>
                </div>
             </div>
          </div>
       </section>
+      <!--Rezumat despre celelalte pagini -->
       <section class="container-fluid d-flex justify-content-around pb-5">
          <div class="card-group p-3">
             <div class="card p-lg-3">
@@ -195,7 +209,7 @@
                </div>
                <div class="card-body">
                   <h5 class="card-title">Servicii</h5>
-                  <p class="card-text">Gama variata de servicii pe care vi le oferim este una in pas cu schimbarile societatii astfel incat sa va satisfacem exigentele in materie de calitate si design.</p>
+                  <p class="card-text">Gama variată de servicii pe care vi le oferim este una în pas cu schimbările societății astfel încât să vă satisfacem exigentele în materie de calitate și design.</p>
                </div>
                <div class="card-footer bg-transparent">
                   <a href="servicii.html" class="text-muted bg-transparent">Citește mai mult</a>
@@ -207,7 +221,7 @@
                </div>
                <div class="card-body">
                   <h5 class="card-title">Portofoliu</h5>
-                  <p class="card-text">De la inceputul activitatii noastre am demarat numeroase proiecte, atat civile cat si industriale care ne-au recomandat mai departe, mentinandu-ne astfel in top.</p>
+                  <p class="card-text">De la începutul activității noastre am demarat numeroase proiecte, atât civile cât și industriale care ne-au recomandat mai departe, mențințându-ne astfel în top.</p>
                </div>
                <div class="card-footer bg-transparent">
                   <a href="portofoliu.html" class="text-muted bg-transparent">Citește mai mult</a>
@@ -219,7 +233,7 @@
                </div>
                <div class="card-body">
                   <h5 class="card-title">Despre noi</h5>
-                  <p class="card-text">Dorim sa oferim cele mai eficiente si calitative proiecte, la timp, angajand si sustinand echipe flexibile si motivate. Am pornit cu pasi siguri si hotarati si vom continua la fel.</p>
+                  <p class="card-text">Dorim să oferim cele mai eficiente și calitative proiecte, la timp, angajand și susținând echipe flexibile și motivate. Am pornit cu pași siguri și hotărâți și vom continua la fel.</p>
                </div>
                <div class="card-footer bg-transparent">
                   <a href="desprenoi.html" class="text-muted bg-transparent">Citește mai mult</a>
@@ -227,16 +241,17 @@
             </div>
          </div>
       </section>
+      <!--Footer -->
       <footer class="border-top pt-5">
          <div class="container">
             <div class="row">
                <div class="col-sm-12 col-lg-3 col-md-6 d-flex align-items-start flex-column pb-sm-3">
-                  <h5 class="pb-2">Informatii</h5>
+                  <h5 class="pb-2">Informații</h5>
                   <ul class="nav flex-column">
-                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Termeni si conditii</a></li>
-                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Politica de confidentialitate</a></li>
+                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Termeni și condiții</a></li>
+                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Politica de confidențialitate</a></li>
                      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Politica de cookie-uri</a></li>
-                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Garantia lucrarilor</a></li>
+                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Garanția lucrărilor</a></li>
                   </ul>
                </div>
                <div class="col-sm-12 col-lg-3 col-md-6 d-flex align-items-start flex-column pb-sm-3">
@@ -274,35 +289,33 @@
                     </li>
                   </ul>
                </div>
+               <!--Scurta descriere companie -->
                <div class="col-sm-12 col-lg-3 col-md-6 pb-sm-3 pt-lg-0 pt-md-0 pt-2">
                   <div>
                      <h5 class="text-uppercase fw-bold mb-4">
                         <p style="font-family: lobster; font-size: x-large; color: #2b3948;"><i class="fa-solid fa-helmet-safety"></i>Beni`s Construction
-                        </h1>
                      </h5>
                      <h6 class="text-muted">
-                        Firma de constructii cu experienta
+                        Firmă de construcții cu experientă
                       </h6>
                      <p class="text-muted">
-                        Responsabilitate, calitate si siguranta lucrarilor executate
+                        Responsabilitate, calitate si siguranta lucrărilor executate
                       </p>
                   </div>
                </div>
             </div>
          </div>
+         <!--Copyright -->
          <div class="text-center p-4 w-100" id="copyright">
             © 2022 Copyright
          </div>
       </footer>
+
       <script src="https://kit.fontawesome.com/58902b6e5e.js" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
       <script src="js/home.js"></script>
-      <!--<div>
-         </div>
-         
-         
-      -->
+
    </body>
 </html>

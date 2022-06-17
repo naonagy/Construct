@@ -1,3 +1,5 @@
+//functia care face posibil lightbox-ul
+
 import Lightbox from 'bs5-lightbox';
 
 const options = {

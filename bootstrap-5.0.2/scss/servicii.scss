@@ -3,7 +3,7 @@ body
 {
     background-color: #b0bdca;
 }
-
+//Menu bar
 header{
     background-color: #182D42;    
     color: #fff !important; 
@@ -14,6 +14,7 @@ header{
     padding: 0px;
     font-size: 22px;
 }
+//contact
 .bi{
     -webkit-text-size-adjust: auto;
 }
@@ -38,15 +39,23 @@ header{
     width: 125px;
     height: 125px;
 }
-form{
+
+
+form
+{
     border-radius: 10px;
 }
-.bck{
+//backgorund-color
+.bck
+{
     background-color: #b0bdca;
 }
-.bck *{
+.bck *
+{
     background-color: #b0bdca;
 }
+
+//footer
 footer
 {
     background-color: #637282;
@@ -61,31 +70,134 @@ footer *
     background-color: #182D42;
     color: #faebd7;
 }
-#static{
-    background-image: url(/Photos/instalatii.jpg) !important;
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    height: 100vh;
+//formular
+
+.ctn //container formular
+{
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+
 }
 
 
-  
-  .rate {
+fieldset
+{
+    display:none;
+    box-shadow:6px 6px 40px 1px gray;
+    background-color: #001830;
+    margin: 0px auto;
+    font-family: Raleway;
+    padding: 40px;
+    border: solid #182D42;
+    border-radius: 10px;
+
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+
+
+}
+#first //primul fieldset
+{
+    display:block;
+    box-shadow:6px 6px 40px 1px gray;
+    background-color: #001830;
+    margin: 0px auto;
+    font-family: Raleway;
+    padding: 40px;
+    border: solid #182D42;
+    border-radius: 10px
+}
+//campurile formularului
+input[type=text],input[type=number],select
+{
+    width:100%;
+    margin:10px 0;
+    height:40px;
+    border:2px solid #3c4c5c;
+    border-radius:4px;
+    padding: 10px;
+    font-size: 17px;
+}
+//next si submit button
+.fbtn
+{
+    background-color: #182D42;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    cursor: pointer;
+    border-radius: 8px;
+}
+.fbtn:hover 
+{
+    opacity: 0.8
+}
+//previous button
+.pbtn{
+    background-color: #637282;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 17px;
+    font-family: Raleway;
+    border-radius: 8px;
+    cursor: pointer;
+}
+.pbtn:hover 
+{
+    opacity: 0.8
+}
+
+//linia de separator la titluri
+.separator 
+{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #001830;
+}
+    
+.separator::before,
+.separator::after 
+{
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid #000;
+}
+
+.separator:not(:empty)::before 
+{
+    margin-right: .25em;
+}
+
+.separator:not(:empty)::after 
+{
+    margin-left: .25em;
+}
+
+//ratingul 
+.rate 
+{
     float: left;
     height: 46px;
     padding: 0 10px;
 }
-.ctn input[type="radio"] {
+.ctn input[type="radio"] 
+{
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
 
 
-.rate:not(:checked) > label {
+.rate:not(:checked) > label 
+{
     float:right;
     width:1em;
     overflow:hidden;
@@ -94,24 +206,30 @@ footer *
     font-size:30px;
     color:#ccc;
 }
-.rate:not(:checked) > label:before {
+.rate:not(:checked) > label:before 
+{
     content: '★ ';
 }
-.rate > input:checked ~ label {
+.rate > input:checked ~ label 
+{
     color: #ffc700;    
 }
 .rate:not(:checked) > label:hover,
-.rate:not(:checked) > label:hover ~ label {
+.rate:not(:checked) > label:hover ~ label 
+{
     color: #deb217;  
 }
 .rate > input:checked + label:hover,
 .rate > input:checked + label:hover ~ label,
 .rate > input:checked ~ label:hover,
 .rate > input:checked ~ label:hover ~ label,
-.rate > label:hover ~ input:checked ~ label {
+.rate > label:hover ~ input:checked ~ label 
+{
     color: #c59b08;
 }
 
+
+//responsiveness pentru header
 
 @media only screen and (max-width: 992px) 
 {
@@ -147,120 +265,3 @@ footer *
     }
 }
 
-.rotateimg {
-    -webkit-transform:rotate(360deg);
-    -moz-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    -o-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
-
-
-
-
-.thanks-message {
-    display: none
-}
-
-
-
-
-
-
-.ctn {
-    display: block;
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-
-}
-
-
-    fieldset{
-    display:none;
-    box-shadow:6px 6px 40px 1px gray;
-    background-color: #001830;
-    margin: 0px auto;
-    font-family: Raleway;
-    padding: 40px;
-    border: solid #182D42;
-    border-radius: 10px;
-
-    position: relative;
-    padding-left: 35px;
-    margin-bottom: 12px;
-
-
-    }
-    #first{
-    display:block;
-    box-shadow:6px 6px 40px 1px gray;
-    background-color: #001830;
-    margin: 0px auto;
-    font-family: Raleway;
-    padding: 40px;
-    border: solid #182D42;
-    border-radius: 10px
-    }
-    input[type=text],input[type=number],select{
-    width:100%;
-    margin:10px 0;
-    height:40px;
-    border:2px solid #3c4c5c;
-    border-radius:4px;
-    padding: 10px;
-    font-size: 17px;
-    }
-    .fbtn{
-    background-color: #182D42;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    font-size: 17px;
-    font-family: Raleway;
-    cursor: pointer;
-    border-radius: 8px;
-    }
-    .fbtn:hover {
-        opacity: 0.8
-    }
-    .pbtn{
-        background-color: #637282;
-        color: #ffffff;
-        border: none;
-        padding: 10px 20px;
-        font-size: 17px;
-        font-family: Raleway;
-        border-radius: 8px;
-        cursor: pointer;
-        }
-        .pbtn:hover {
-            opacity: 0.8
-     }
-     .separator {
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: #001830;
-      }
-      
-      .separator::before,
-      .separator::after {
-        content: '';
-        flex: 1;
-        border-bottom: 1px solid #000;
-      }
-      
-      .separator:not(:empty)::before {
-        margin-right: .25em;
-      }
-      
-      .separator:not(:empty)::after {
-        margin-left: .25em;
-      }
-      .switch {
-        position: relative;
-        display: inline-block;
-        width: 60px;
-        height: 34px;
-      }

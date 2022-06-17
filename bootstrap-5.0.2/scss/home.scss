@@ -20,6 +20,17 @@ body
     height: 125px;
 }
 
+.offcanvas .nav-item
+{
+    text-align: center;
+}
+
+//animatie elemente navbar
+.nb:hover{
+    box-shadow: none !important;
+}
+
+//introducere
 h1
 {
     font-style: italic;
@@ -52,25 +63,13 @@ h2
     }
     background-color: #b0bdca;
 }
-footer
-{
-    background-color: #b0bdca;
-    margin-top: 0;
-}
-footer *
-{
-    background-color: #b0bdca;
-}
-#copyright
-{
-    background-color: #637282;
-}
+
+//statistici
 #statistici
 {
     background-color: #b0bdca;
     padding-bottom: 0;
     margin-bottom: 0;
-    //height: 250px;
     overflow: hidden;
 }
 #statistici *
@@ -85,11 +84,7 @@ footer *
 {
     padding: 0em;
     margin: 0;
-    //position: absolute;
-    //top: 50%;
-   left: 50%;
-   // transform: translate(-50%, -50%);
-    //height: 100px;
+    left: 50%;
     width: 200px;
     border-radius: 0 150px 150px 0px;    height: inherit;
 }
@@ -105,6 +100,7 @@ footer *
     text-align: center;
 }
 
+//slider
 .slider
 {
     margin-bottom: 0 !important;
@@ -135,20 +131,32 @@ footer *
     background-color: rgba(0,0,0,0.4);width:100%;text-align: center;
 
 }
+
+//carduri
 .card{
     background-color: #182D42; 
     color: white;
     border: transparent;
 }
+
+//menu bar contact info
 .bi{
     -webkit-text-size-adjust: auto;
 }
-.offcanvas .nav-item
+
+//footer
+footer
 {
-    text-align: center;
+    background-color: #b0bdca;
+    margin-top: 0;
 }
-.nb:hover{
-    box-shadow: none !important;
+footer *
+{
+    background-color: #b0bdca;
+}
+#copyright
+{
+    background-color: #637282;
 }
 
 
